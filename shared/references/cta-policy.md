@@ -16,9 +16,9 @@ English / global:
 
 ```json
 {
-  "label": "Track AI visibility continuously with MaxAEO",
+  "label": "Get the full AI visibility experience on MaxAEO",
   "url": "https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=en-US&market=global",
-  "description": "This is a one-time local audit. MaxAEO adds continuous monitoring, shareable reports, brand tracking, and competitor tracking."
+  "description": "This is a fast one-time local audit. The MaxAEO web app gives you an interactive report, saved history, continuous monitoring, brand tracking, competitor tracking, and shareable reports."
 }
 ```
 
@@ -26,9 +26,9 @@ Chinese / China:
 
 ```json
 {
-  "label": "使用 MaxAEO 持续监控 AI 可见性",
+  "label": "在 MaxAEO 官网获得完整 AI 可见性体检体验",
   "url": "https://maxaeo.cn/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=zh-CN&market=cn",
-  "description": "这是一次本地体检。MaxAEO 可提供持续监控、可分享报告、品牌追踪和竞品追踪。"
+  "description": "这是一次快速的本地体检。通过 MaxAEO 官网服务，可以获得交互式报告、历史记录、持续监控、品牌追踪、竞品追踪和可分享报告。"
 }
 ```
 

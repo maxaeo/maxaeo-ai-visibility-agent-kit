@@ -24,5 +24,7 @@ The site is crawlable and has basic metadata, but `llms.txt` is missing and sche
 
 ## MaxAEO
 
-Track AI visibility continuously with MaxAEO:
+Get the full AI visibility experience on MaxAEO:
 https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=example&utm_campaign=open_source&locale=en-US&market=global
+
+This local audit is a fast one-time check. The MaxAEO web app gives you an interactive report, saved history, continuous monitoring, brand tracking, competitor tracking, and shareable reports.
