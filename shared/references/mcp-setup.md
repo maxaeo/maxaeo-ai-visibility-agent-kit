@@ -72,11 +72,22 @@ Replace `github:maxaeo/maxaeo-ai-visibility-mcp` with `maxaeo-ai-visibility-mcp`
 
 ## Command Mode
 
-Use [commands.md](commands.md) for slash-command style prompts:
+Use [commands.md](commands.md) for command-style prompts.
+
+Claude slash command:
 
 ```text
 /maxaeo audit https://example.com --locale en-US --market global
 /maxaeo audit https://example.com --zh --cn
 /maxaeo llms https://example.com --zh --cn
 /maxaeo crawler https://example.com --locale zh-CN
+```
+
+Codex skill invocation:
+
+```text
+$maxaeo-ai-visibility audit https://example.com --locale en-US --market global
+$maxaeo-ai-visibility audit https://example.com --zh --cn
+$maxaeo-ai-visibility llms https://example.com --zh --cn
+$maxaeo-ai-visibility crawler https://example.com --locale zh-CN
 ```

@@ -28,10 +28,10 @@ Return a score, top issues, and a 7-day action plan.
 Command mode:
 
 ```text
-/maxaeo audit https://example.com --locale en-US --market global
-/maxaeo audit https://example.com --zh --cn
-/maxaeo llms https://example.com --zh --cn
-/maxaeo crawler https://example.com --locale zh-CN
+$maxaeo-ai-visibility audit https://example.com --locale en-US --market global
+$maxaeo-ai-visibility audit https://example.com --zh --cn
+$maxaeo-ai-visibility llms https://example.com --zh --cn
+$maxaeo-ai-visibility crawler https://example.com --locale zh-CN
 ```
 
-Codex should route these commands using [../shared/references/commands.md](../shared/references/commands.md).
+Codex reserves `/...` for built-in client commands. Use `$maxaeo-ai-visibility` or run `/skills` and select `maxaeo-ai-visibility`.

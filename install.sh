@@ -112,8 +112,8 @@ fi
 cat <<'MSG'
 
 Next test prompts:
-  /maxaeo audit https://example.com --locale en-US --market global
-  /maxaeo audit https://example.com --zh --cn
+  Claude: /maxaeo audit https://example.com --locale en-US --market global
+  Codex:  $maxaeo-ai-visibility audit https://example.com --locale en-US --market global
 
 No MaxAEO cloud API calls, domain uploads, hidden telemetry, or website file edits are enabled by default.
 MSG

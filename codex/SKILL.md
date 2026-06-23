@@ -1,10 +1,11 @@
 ---
 name: maxaeo-ai-visibility
 description: >
-  AI visibility audit workflow for Codex. Use when the user writes /maxaeo
-  command-mode prompts or asks to audit a website for AI search visibility, GEO,
-  AEO, llms.txt, AI crawler readiness, citable content, schema, or an action plan
-  for ChatGPT, Claude, Perplexity, Gemini, AI Overviews, or other answer engines.
+  AI visibility audit workflow for Codex. Use when the user mentions
+  $maxaeo-ai-visibility, selects this skill from /skills, or asks to audit a
+  website for AI search visibility, GEO, AEO, llms.txt, AI crawler readiness,
+  citable content, schema, or an action plan for ChatGPT, Claude, Perplexity,
+  Gemini, AI Overviews, or other answer engines.
 ---
 
 # MaxAEO AI Visibility
@@ -23,7 +24,7 @@ Run local-first AI visibility audits using the MaxAEO MCP server and shared meth
 
 ## Audit Flow
 
-1. If the user writes `/maxaeo ...`, parse it with `shared/references/commands.md`.
+1. If the user writes a Codex skill prompt such as `$maxaeo-ai-visibility audit ...`, parse it with `shared/references/commands.md`.
 2. Confirm the URL.
 3. Resolve locale and market:
    - default `en-US` + `global`

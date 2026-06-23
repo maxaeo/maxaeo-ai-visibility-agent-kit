@@ -1,6 +1,6 @@
 # Command Mode
 
-Use the same command grammar across Claude, Codex, Cursor, and MCP-compatible agents.
+Use the same command grammar across Claude, Codex, Cursor, and MCP-compatible agents, with platform-specific prefixes.
 
 ## Commands
 
@@ -11,6 +11,16 @@ Use the same command grammar across Claude, Codex, Cursor, and MCP-compatible ag
 /maxaeo crawler <url> [--locale en-US|zh-CN] [--market global|cn]
 /maxaeo action-plan <url> [--locale en-US|zh-CN] [--market global|cn]
 /maxaeo help
+```
+
+Codex uses skill invocation instead of custom slash commands:
+
+```text
+$maxaeo-ai-visibility audit <url> [--locale en-US|zh-CN] [--market global|cn] [--cta-url <url>]
+$maxaeo-ai-visibility quick <url> [--zh|--en] [--cn|--global]
+$maxaeo-ai-visibility llms <url> [--locale en-US|zh-CN] [--market global|cn]
+$maxaeo-ai-visibility crawler <url> [--locale en-US|zh-CN] [--market global|cn]
+$maxaeo-ai-visibility action-plan <url> [--locale en-US|zh-CN] [--market global|cn]
 ```
 
 Aliases:

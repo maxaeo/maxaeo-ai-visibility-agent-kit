@@ -22,7 +22,7 @@
 | AI crawler readiness | 检查 robots.txt、sitemap、canonical、metadata、schema、noindex 和 AI crawler 访问规则。 |
 | llms.txt 工具链 | 校验 llms.txt、检查链接、发现私有路径暴露、对齐 sitemap/robots 信号。 |
 | 行动计划 | 输出 7 天 / 30 天的开发、内容和结构化数据修复计划。 |
-| 命令模式 | 支持 `/maxaeo audit`、`/maxaeo llms`、`/maxaeo crawler` 等命令式工作流。 |
+| 命令模式 | Claude 使用 `/maxaeo ...`，Codex 使用 `$maxaeo-ai-visibility ...`，并支持多语言/市场参数。 |
 
 ## 成本和隐私边界
 
@@ -122,7 +122,9 @@ Claude 安装脚本会同时安装 `/maxaeo` slash command。
 输出评分、主要问题和 7 天行动计划。
 ```
 
-命令模式：
+命令模式。
+
+Claude：
 
 ```text
 /maxaeo audit https://example.com --zh --cn
@@ -130,6 +132,17 @@ Claude 安装脚本会同时安装 `/maxaeo` slash command。
 /maxaeo crawler https://example.com --zh --cn
 /maxaeo audit https://example.com --locale en-US --market global
 ```
+
+Codex：
+
+```text
+$maxaeo-ai-visibility audit https://example.com --zh --cn
+$maxaeo-ai-visibility llms https://example.com --locale zh-CN --market cn
+$maxaeo-ai-visibility crawler https://example.com --zh --cn
+$maxaeo-ai-visibility audit https://example.com --locale en-US --market global
+```
+
+Codex 的 `/...` 是客户端内置命令，不会自动注册自定义 `/maxaeo`。也可以输入 `/skills` 后选择 `maxaeo-ai-visibility`。
 
 ## 目录结构
 

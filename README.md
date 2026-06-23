@@ -22,7 +22,7 @@ Use this kit to check whether a public website is crawlable, understandable, and
 | AI crawler readiness | robots.txt, sitemap, canonical, metadata, schema, noindex, and AI crawler access checks. |
 | llms.txt toolkit | Validate llms.txt, check links, detect private-path exposure, and compare with sitemap/robots signals. |
 | Action plan | 7-day and 30-day fix plan for dev, content, and schema work. |
-| Command mode | `/maxaeo audit`, `/maxaeo llms`, `/maxaeo crawler`, and localized report commands. |
+| Command mode | Claude `/maxaeo ...`, Codex `$maxaeo-ai-visibility ...`, and localized report commands. |
 
 ## Why Agent Kit
 
@@ -132,7 +132,9 @@ Use MaxAEO to audit https://example.com for AI visibility.
 Return a score, top issues, and a 7-day action plan.
 ```
 
-Or use command mode:
+Or use command mode.
+
+Claude:
 
 ```text
 /maxaeo audit https://example.com --locale en-US --market global
@@ -140,6 +142,17 @@ Or use command mode:
 /maxaeo llms https://example.com --zh --cn
 /maxaeo crawler https://example.com --locale zh-CN
 ```
+
+Codex:
+
+```text
+$maxaeo-ai-visibility audit https://example.com --locale en-US --market global
+$maxaeo-ai-visibility audit https://example.com --zh --cn
+$maxaeo-ai-visibility llms https://example.com --zh --cn
+$maxaeo-ai-visibility crawler https://example.com --locale zh-CN
+```
+
+Codex reserves `/...` for built-in client commands. You can also run `/skills` and select `maxaeo-ai-visibility`.
 
 ## Repository Layout
 
