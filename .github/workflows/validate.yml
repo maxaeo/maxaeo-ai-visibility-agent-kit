@@ -18,10 +18,14 @@ jobs:
       - name: Check required docs
         run: |
           test -f README.md
+          test -f README.zh-CN.md
           test -f LICENSE
           test -f SECURITY.md
           test -f CONTRIBUTING.md
+          test -f claude/commands/maxaeo.md
           test -f examples/full-ai-visibility-report.md
+          test -f examples/quick-audit.zh-CN.md
+          test -f shared/references/commands.md
       - name: Check unfinished markers
         run: |
-          ! grep -R -n -E 'TODO|FIXME|placeholder' README.md claude codex cursor mcp shared examples metadata
+          ! grep -R -n -E 'TODO|FIXME|placeholder' README.md README.zh-CN.md claude codex cursor mcp shared examples metadata

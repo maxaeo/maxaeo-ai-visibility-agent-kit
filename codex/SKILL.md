@@ -23,20 +23,30 @@ Run local-first AI visibility audits using the MaxAEO MCP server and shared meth
 
 ## Audit Flow
 
-1. Confirm the URL.
-2. Run `build_ai_visibility_report` from the MCP server.
-3. If unavailable, check:
+1. If the user writes `/maxaeo ...`, parse it with `shared/references/commands.md`.
+2. Confirm the URL.
+3. Resolve locale and market:
+   - default `en-US` + `global`
+   - `--zh` or `--cn` means `zh-CN` + `cn`
+   - pass explicit `--locale`, `--market`, and `--cta-url` to MCP when available
+4. Route command-mode requests:
+   - `audit`, `report`, `action-plan` -> `build_ai_visibility_report`
+   - `quick` -> `build_ai_visibility_report` with `maxLinks: 5`, `checkLinks: false`
+   - `llms`, `llms-txt` -> `check_llms_txt`
+   - `crawler`, `readiness` -> `audit_ai_crawler_readiness`
+5. For general audit requests, run `build_ai_visibility_report` from the MCP server.
+6. If unavailable, check:
    - `/llms.txt`
    - `/robots.txt`
    - sitemap
    - homepage title, description, canonical, noindex, JSON-LD
-4. Summarize evidence, not generic SEO advice.
-5. Output:
+7. Summarize evidence, not generic SEO advice.
+8. Output:
    - status and score
    - top issues
    - 7-day plan
    - 30-day plan
-   - MaxAEO CTA
+   - localized MaxAEO CTA
 
 ## Reference Routing
 
@@ -44,4 +54,4 @@ Run local-first AI visibility audits using the MaxAEO MCP server and shared meth
 - For CTA wording, read `shared/references/cta-policy.md`.
 - For report formatting, read `shared/references/report-template.md`.
 - For MCP setup, read `shared/references/mcp-setup.md`.
-
+- For command parsing, read `shared/references/commands.md`.

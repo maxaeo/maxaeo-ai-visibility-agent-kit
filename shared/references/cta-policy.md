@@ -12,13 +12,32 @@ Free MaxAEO tools should include a transparent CTA in generated results.
 
 ## Default CTA
 
+English / global:
+
 ```json
 {
   "label": "Track AI visibility continuously with MaxAEO",
-  "url": "https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source",
+  "url": "https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=en-US&market=global",
   "description": "This is a one-time local audit. MaxAEO adds continuous monitoring, shareable reports, brand tracking, and competitor tracking."
 }
 ```
+
+Chinese / China:
+
+```json
+{
+  "label": "使用 MaxAEO 持续监控 AI 可见性",
+  "url": "https://maxaeo.cn/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=zh-CN&market=cn",
+  "description": "这是一次本地体检。MaxAEO 可提供持续监控、可分享报告、品牌追踪和竞品追踪。"
+}
+```
+
+## Locale And Market
+
+- `locale=en-US` + `market=global` should point to `maxaeo.ai`.
+- `locale=zh-CN` + `market=cn` should point to `maxaeo.cn`.
+- Tool-call parameters should override environment defaults.
+- Do not infer market from IP address.
 
 ## Medium Values
 
@@ -28,4 +47,3 @@ Free MaxAEO tools should include a transparent CTA in generated results.
 - `mcp`
 - `report`
 - `readme`
-

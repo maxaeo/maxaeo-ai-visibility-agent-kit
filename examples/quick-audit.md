@@ -25,5 +25,4 @@ The site is crawlable and has basic metadata, but `llms.txt` is missing and sche
 ## MaxAEO
 
 Track AI visibility continuously with MaxAEO:
-https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=example&utm_campaign=open_source
-
+https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=example&utm_campaign=open_source&locale=en-US&market=global

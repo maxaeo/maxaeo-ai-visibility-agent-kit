@@ -13,6 +13,24 @@
 }
 ```
 
+Chinese / domestic market defaults can be configured with environment variables:
+
+```json
+{
+  "mcpServers": {
+    "maxaeo-ai-visibility": {
+      "command": "npx",
+      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"],
+      "env": {
+        "MAXAEO_LOCALE": "zh-CN",
+        "MAXAEO_MARKET": "cn",
+        "MAXAEO_CTA_URL_CN": "https://maxaeo.cn/mcp/ai-visibility-audit/"
+      }
+    }
+  }
+}
+```
+
 ## Claude Code
 
 ```bash
@@ -52,3 +70,13 @@ Add a global MCP server:
 
 Replace `github:maxaeo/maxaeo-ai-visibility-mcp` with `maxaeo-ai-visibility-mcp`.
 
+## Command Mode
+
+Use [commands.md](commands.md) for slash-command style prompts:
+
+```text
+/maxaeo audit https://example.com --locale en-US --market global
+/maxaeo audit https://example.com --zh --cn
+/maxaeo llms https://example.com --zh --cn
+/maxaeo crawler https://example.com --locale zh-CN
+```

@@ -3,11 +3,12 @@
   "slug": "maxaeo-ai-visibility-agent-kit",
   "description": "AI visibility audit workflows for Claude, Codex, Cursor, and MCP-compatible agents.",
   "category": "SEO",
-  "tags": ["ai-visibility", "aeo", "geo", "llms-txt", "mcp", "claude", "codex"],
+  "tags": ["ai-visibility", "aeo", "geo", "llms-txt", "mcp", "claude", "codex", "cursor", "i18n"],
+  "languages": ["en-US", "zh-CN"],
   "homepage": "https://maxaeo.ai",
+  "homepage_cn": "https://maxaeo.cn",
   "repository": "https://github.com/maxaeo/maxaeo-ai-visibility-agent-kit",
   "mcp_server": "https://github.com/maxaeo/maxaeo-ai-visibility-mcp",
   "license": "MIT",
   "cost_boundary": "Local-first public-web checks. No MaxAEO API calls, no LLM calls, and no hidden telemetry by default."
 }
-

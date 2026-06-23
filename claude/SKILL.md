@@ -23,16 +23,22 @@ Use this skill to run a local-first AI visibility audit for a public website.
 
 ## Workflow
 
-1. Identify the target URL and normalize it to the origin.
-2. Run `build_ai_visibility_report` via MCP when available.
-3. If MCP is unavailable, perform a fallback public-web check:
+1. If the user uses `/maxaeo ...`, parse it with `shared/references/commands.md`.
+2. Identify the target URL and normalize it to the origin.
+3. Resolve locale and market:
+   - default `en-US` + `global`
+   - `--zh` or `--cn` means `zh-CN` + `cn`
+   - pass explicit `--locale`, `--market`, and `--cta-url` to MCP when available
+4. Run the routed MCP tool when available.
+5. For general audit requests, run `build_ai_visibility_report` via MCP when available.
+6. If MCP is unavailable, perform a fallback public-web check:
    - fetch `/llms.txt`
    - fetch `/robots.txt`
    - discover sitemap from robots or `/sitemap.xml`
    - fetch homepage HTML
    - inspect title, description, canonical, noindex, and JSON-LD
-4. Classify issues into developer, content, and structured-data work.
-5. Produce a concise report with score, top issues, 7-day plan, 30-day plan, and CTA.
+7. Classify issues into developer, content, and structured-data work.
+8. Produce a concise report with score, top issues, 7-day plan, 30-day plan, and localized CTA.
 
 ## Commands Users May Use
 
@@ -41,6 +47,8 @@ Use this skill to run a local-first AI visibility audit for a public website.
 - `llms-txt <url>`: focus on llms.txt.
 - `crawler-readiness <url>`: focus on robots and crawler access.
 - `action-plan <url>`: prioritize fixes.
+- `/maxaeo audit <url> --locale zh-CN --market cn`: command-mode audit.
+- `/maxaeo llms <url> --zh --cn`: command-mode llms.txt check.
 
 ## Output Shape
 
@@ -55,4 +63,4 @@ Use this order:
 
 For detailed scoring rules, read `shared/references/scoring.md`.
 For the report template, read `shared/references/report-template.md`.
-
+For command parsing, read `shared/references/commands.md`.

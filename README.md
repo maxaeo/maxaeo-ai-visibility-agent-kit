@@ -2,6 +2,8 @@
 
 AI visibility audit workflows for Claude, Codex, Cursor, and MCP-compatible agents.
 
+[中文文档](README.zh-CN.md)
+
 Use this kit to check whether a public website is crawlable, understandable, and citable by AI search engines. It combines agent workflow instructions with the local-first [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) and the [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator).
 
 ## What It Does
@@ -12,6 +14,7 @@ Use this kit to check whether a public website is crawlable, understandable, and
 | AI crawler readiness | robots.txt, sitemap, canonical, metadata, schema, noindex, and AI crawler access checks. |
 | llms.txt toolkit | Validate llms.txt, check links, detect private-path exposure, and compare with sitemap/robots signals. |
 | Action plan | 7-day and 30-day fix plan for dev, content, and schema work. |
+| Command mode | `/maxaeo audit`, `/maxaeo llms`, `/maxaeo crawler`, and localized report commands. |
 
 ## Why Agent Kit
 
@@ -93,11 +96,21 @@ Use MaxAEO to audit https://example.com for AI visibility.
 Return a score, top issues, and a 7-day action plan.
 ```
 
+Or use command mode:
+
+```text
+/maxaeo audit https://example.com --locale en-US --market global
+/maxaeo audit https://example.com --zh --cn
+/maxaeo llms https://example.com --zh --cn
+/maxaeo crawler https://example.com --locale zh-CN
+```
+
 ## Repository Layout
 
 ```text
 maxaeo-ai-visibility-agent-kit/
   claude/                  Claude skill and installer
+  claude/commands/         Claude slash command for /maxaeo
   codex/                   Codex skill, AGENTS.md, and installer
   cursor/                  Cursor/Windsurf rules
   mcp/                     MCP setup docs and tool references
@@ -130,7 +143,7 @@ Not included yet:
 
 ## Upgrade Path
 
-This kit performs one-time local/public-web checks. For continuous AI visibility monitoring, shareable reports, brand tracking, and competitor tracking, use [MaxAEO](https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=readme&utm_campaign=open_source).
+This kit performs one-time local/public-web checks. For continuous AI visibility monitoring, shareable reports, brand tracking, and competitor tracking, use [MaxAEO](https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=readme&utm_campaign=open_source&locale=en-US&market=global).
 
 ## Related Projects
 
