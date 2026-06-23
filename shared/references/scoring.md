@@ -1,6 +1,6 @@
 # Scoring
 
-Use scores as directional readiness signals, not as guaranteed AI search rankings.
+Use scores as local technical foundation signals, not as guaranteed AI search rankings, recommendations, citations, brand mentions, or competitor visibility.
 
 Suggested v0 weights:
 
@@ -22,8 +22,7 @@ Severity:
 
 Score bands:
 
-- `90-100`: healthy for a one-time local audit.
+- `90-100`: healthy for a one-time local technical foundation audit.
 - `70-89`: usable but has cleanup opportunities.
 - `40-69`: significant visibility foundation gaps.
 - `<40`: blocking issues likely need technical fixes first.
-

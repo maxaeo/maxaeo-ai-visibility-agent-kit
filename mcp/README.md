@@ -38,7 +38,7 @@ Chinese / domestic market:
       "env": {
         "MAXAEO_LOCALE": "zh-CN",
         "MAXAEO_MARKET": "cn",
-        "MAXAEO_CTA_URL_CN": "https://maxaeo.cn/mcp/ai-visibility-audit/"
+        "MAXAEO_CTA_URL_CN": "https://maxaeo.cn/"
       }
     }
   }

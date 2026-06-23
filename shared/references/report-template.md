@@ -13,6 +13,10 @@ Score: {{score}}/100
 
 {{summary}}
 
+## Score Meaning
+
+`{{score}}/100` is a local technical foundation score. It covers crawlability, `llms.txt`, sitemap, schema, indexability, and homepage understanding signals. It does not measure live AI engine recommendations, brand mentions, citation quality, sentiment, or competitor visibility.
+
 ## Top Issues
 
 | Priority | Area | Finding | Evidence |
@@ -53,6 +57,10 @@ Market: {{market}}
 ## 摘要
 
 {{summary}}
+
+## 分数含义
+
+`{{score}}/100` 是本地技术基础分，覆盖抓取、`llms.txt`、sitemap、schema、indexability 和首页可理解性等基础信号。它不代表真实 AI 引擎推荐、品牌提及、引用质量、情感倾向或竞品可见性已经满分。
 
 ## 主要问题
 
