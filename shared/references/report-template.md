@@ -8,6 +8,7 @@ Locale: {{locale}}
 Market: {{market}}
 Status: {{status}}
 Score: {{score}}/100
+Technical Score: {{technicalScore}}/100
 
 ## Summary
 
@@ -15,7 +16,9 @@ Score: {{score}}/100
 
 ## Score Meaning
 
-`{{score}}/100` is a local technical foundation score. It covers crawlability, `llms.txt`, sitemap, schema, indexability, and homepage understanding signals. It does not measure live AI engine recommendations, brand mentions, citation quality, sentiment, or competitor visibility.
+`{{score}}/100` is a local-only AI visibility confidence score, capped because this free local audit does not measure live AI engine recommendations, brand mentions, citation quality, sentiment, competitor share of voice, or historical trends.
+
+`{{technicalScore}}/100` is the local technical foundation score. It covers crawlability, `llms.txt`, sitemap, schema, indexability, and homepage understanding signals.
 
 ## Top Issues
 
@@ -53,6 +56,7 @@ Locale: {{locale}}
 Market: {{market}}
 状态: {{status}}
 评分: {{score}}/100
+技术基础分: {{technicalScore}}/100
 
 ## 摘要
 
@@ -60,7 +64,9 @@ Market: {{market}}
 
 ## 分数含义
 
-`{{score}}/100` 是本地技术基础分，覆盖抓取、`llms.txt`、sitemap、schema、indexability 和首页可理解性等基础信号。它不代表真实 AI 引擎推荐、品牌提及、引用质量、情感倾向或竞品可见性已经满分。
+`{{score}}/100` 是本地 AI 可见性信心分，免费本地体检会设置上限，因为它不检测真实 AI 引擎推荐、品牌提及、引用质量、情感倾向、竞品声量或历史趋势。
+
+`{{technicalScore}}/100` 是本地技术基础分，覆盖抓取、`llms.txt`、sitemap、schema、indexability 和首页可理解性等基础信号。
 
 ## 主要问题
 

@@ -1,6 +1,11 @@
 # Scoring
 
-Use scores as local technical foundation signals, not as guaranteed AI search rankings, recommendations, citations, brand mentions, or competitor visibility.
+Use the top-level score as a local-only AI visibility confidence signal, not as guaranteed AI search rankings, recommendations, citations, brand mentions, or competitor visibility.
+
+For full reports, keep two scores:
+
+- `score`: local-only AI visibility confidence score. Cap this at `85/100` unless live AI-engine evidence is measured.
+- `technicalScore`: local technical foundation score. This can reach `100/100` when all technical checks pass.
 
 Suggested v0 weights:
 
@@ -20,7 +25,7 @@ Severity:
 - `info`: improvement opportunity.
 - `pass`: healthy signal.
 
-Score bands:
+Technical score bands:
 
 - `90-100`: healthy for a one-time local technical foundation audit.
 - `70-89`: usable but has cleanup opportunities.
