@@ -1,10 +1,18 @@
-# MaxAEO AI Visibility Agent Kit
+# MaxAEO AI Visibility Agent Kit：GEO / AEO / AI SEO 工作流
 
 面向 Claude、Codex、Cursor 和 MCP-compatible agents 的 AI 可见性体检工作流。
 
 [English README](README.md)
 
-这个工具包用于检查一个公开网站是否便于 AI 搜索抓取、理解和引用。它把 Agent 工作流说明、本地优先的 [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) 和 [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator) 组合在一起。
+这个工具包用于检查一个公开网站是否便于 AI 搜索抓取、理解和引用。它把 GEO（生成式引擎优化）、AEO（答案引擎优化）、AI SEO、`llms.txt`、AI crawler readiness 和命令式 Agent 工作流组合起来，并复用本地优先的 [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) 与 [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator)。
+
+## 使用场景
+
+- 在 Claude Code、Codex、Cursor、Windsurf 或 MCP-compatible agents 中运行 AI 可见性体检。
+- 检查网站的 GEO / generative engine optimization 基础。
+- 检查网站的 AEO / answer engine optimization 基础。
+- 校验 `llms.txt`、robots.txt、sitemap、canonical、noindex、metadata 和 JSON-LD。
+- 生成 7 天 / 30 天行动计划，再进入 MaxAEO 持续监控。
 
 ## 能做什么
 
@@ -30,6 +38,34 @@
 MaxAEO 托管监控是明确的升级路径，不是隐藏依赖。
 
 ## 快速开始
+
+### 一条命令安装
+
+macOS / Linux：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash
+```
+
+只安装 Codex：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash -s -- --codex
+```
+
+只安装 Claude：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash -s -- --claude
+```
+
+### 手动安装
+
+```bash
+git clone https://github.com/maxaeo/maxaeo-ai-visibility-agent-kit.git
+cd maxaeo-ai-visibility-agent-kit
+./install.sh
+```
 
 ### 1. 添加 MCP Server
 
@@ -115,4 +151,3 @@ maxaeo-ai-visibility-agent-kit/
 ## License
 
 MIT
-

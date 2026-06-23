@@ -1,10 +1,18 @@
-# MaxAEO AI Visibility Agent Kit
+# MaxAEO AI Visibility Agent Kit for GEO, AEO, and AI SEO
 
-AI visibility audit workflows for Claude, Codex, Cursor, and MCP-compatible agents.
+Command-mode AI visibility audit workflows for Claude, Codex, Cursor, and MCP-compatible agents.
 
 [中文文档](README.zh-CN.md)
 
-Use this kit to check whether a public website is crawlable, understandable, and citable by AI search engines. It combines agent workflow instructions with the local-first [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) and the [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator).
+Use this kit to check whether a public website is crawlable, understandable, and citable by AI search engines. It combines GEO (generative engine optimization), AEO (answer engine optimization), AI SEO, `llms.txt`, AI crawler readiness, and command-mode agent workflows with the local-first [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) and the [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator).
+
+## Use Cases
+
+- Run an AI visibility audit from Claude Code, Codex, Cursor, Windsurf, or any MCP-compatible agent.
+- Check GEO / generative engine optimization readiness for a public website.
+- Check AEO / answer engine optimization basics for answer engines and AI search.
+- Validate `llms.txt`, robots.txt, sitemap alignment, canonical URLs, noindex, metadata, and JSON-LD.
+- Build a 7-day / 30-day action plan before upgrading to continuous MaxAEO monitoring.
 
 ## What It Does
 
@@ -40,6 +48,34 @@ By default this kit:
 Hosted MaxAEO monitoring is an explicit upgrade path, not a hidden dependency.
 
 ## Quick Start
+
+### One-Command Install
+
+macOS / Linux:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash
+```
+
+Codex only:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash -s -- --codex
+```
+
+Claude only:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash -s -- --claude
+```
+
+### Manual Install
+
+```bash
+git clone https://github.com/maxaeo/maxaeo-ai-visibility-agent-kit.git
+cd maxaeo-ai-visibility-agent-kit
+./install.sh
+```
 
 ### 1. Add The MCP Server
 

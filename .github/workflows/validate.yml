@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check shell scripts
         run: |
+          bash -n install.sh
           bash -n claude/install.sh
           bash -n codex/install.sh
       - name: Check JSON metadata
@@ -19,6 +20,7 @@ jobs:
         run: |
           test -f README.md
           test -f README.zh-CN.md
+          test -f install.sh
           test -f LICENSE
           test -f SECURITY.md
           test -f CONTRIBUTING.md
