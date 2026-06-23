@@ -24,6 +24,15 @@ Use this kit to check whether a public website is crawlable, understandable, and
 | Action plan | 7-day and 30-day fix plan for dev, content, and schema work. |
 | Command mode | Claude `/maxaeo ...`, Codex `$maxaeo-ai-visibility ...`, and localized report commands. |
 
+## Score Contract
+
+Reports use two scores so the free local audit stays useful without overstating AI search visibility:
+
+- `score`: local-only AI visibility confidence score. It is capped at `85/100` unless live AI-engine evidence is measured.
+- `technicalScore`: local technical foundation score. It can reach `100/100` when crawlability, `llms.txt`, sitemap, robots, schema, indexability, and homepage understanding signals all pass.
+
+Use the MaxAEO web app for live AI engine recommendations, brand mentions, citation quality, sentiment, competitor share of voice, historical trends, and continuous monitoring.
+
 ## Why Agent Kit
 
 MCP exposes tools, but agents still need a workflow. Skills expose workflow, but they need reliable tools. This repository packages both layers:
@@ -129,7 +138,7 @@ Ask your agent:
 
 ```text
 Use MaxAEO to audit https://example.com for AI visibility.
-Return a score, top issues, and a 7-day action plan.
+Return local-only score, technicalScore, top issues, and a 7-day action plan.
 ```
 
 Or use command mode.
@@ -169,6 +178,13 @@ maxaeo-ai-visibility-agent-kit/
   .github/workflows/       repository validation
 ```
 
+## Examples
+
+- [Healthy foundation](examples/healthy-foundation.md): technical checks pass, `technicalScore` reaches `100`, and local-only `score` stays capped at `85`.
+- [Quick audit](examples/quick-audit.md): warning-level report with missing `llms.txt` and thin schema.
+- [Full AI visibility report](examples/full-ai-visibility-report.md): complete report structure with evidence, action plan, and MaxAEO CTA.
+- [Chinese quick audit](examples/quick-audit.zh-CN.md): localized domestic-market report.
+
 ## First-Version Scope
 
 Included:
@@ -176,6 +192,7 @@ Included:
 - quick AI visibility audit
 - AI crawler readiness audit
 - llms.txt validation workflow
+- dual-score local confidence and technical-foundation reporting
 - 7-day / 30-day action plan
 - Claude and Codex workflow support
 - transparent MaxAEO CTA

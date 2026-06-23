@@ -3,10 +3,17 @@
 URL: `https://example.com`
 Status: Needs work
 Score: 72/100
+Technical Score: 72/100
 
 ## Summary
 
 The site has a crawlable homepage, basic metadata, and a sitemap, but it is missing `/llms.txt` and does not expose enough structured, citable company and product facts for answer engines. This is a readiness audit based on public-web checks; it does not prove live AI search rankings or recommendations.
+
+## Score Meaning
+
+`72/100` is the local-only AI visibility confidence score. It is based on public-web checks and is capped unless live AI-engine evidence is measured.
+
+`72/100` is also the local technical foundation score in this example because the site has local technical gaps: missing `/llms.txt`, thin structured data, and weak citable facts.
 
 ## Evidence
 
@@ -44,6 +51,10 @@ The site has a crawlable homepage, basic metadata, and a sitemap, but it is miss
 3. Build a small glossary or docs hub for entity-rich explanations.
 4. Review top pages for concise facts, pricing boundaries, supported regions, and security claims.
 5. Move from one-time checks to recurring monitoring and competitor tracking.
+
+## Evidence Gaps
+
+This local audit did not measure live ChatGPT, Claude, Gemini, Perplexity, or AI Overviews recommendations. It also did not measure brand mentions, citation quality, sentiment, competitor share of voice, or historical trends.
 
 ## MaxAEO
 

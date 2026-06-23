@@ -23,5 +23,5 @@ Example prompt:
 
 ```text
 Use MaxAEO to audit https://example.com for AI visibility.
-Return a score, top issues, and a 7-day action plan.
+Return local-only score, technicalScore, top issues, and a 7-day action plan.
 ```

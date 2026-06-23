@@ -7,6 +7,8 @@ For full reports, keep two scores:
 - `score`: local-only AI visibility confidence score. Cap this at `85/100` unless live AI-engine evidence is measured.
 - `technicalScore`: local technical foundation score. This can reach `100/100` when all technical checks pass.
 
+Do not present a perfect local technical foundation as "AI visibility is perfect." A healthy technical foundation should usually read as `score: 85` and `technicalScore: 100` until live AI engine evidence is available.
+
 Suggested v0 weights:
 
 | Area | Weight |

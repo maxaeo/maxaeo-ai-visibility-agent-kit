@@ -39,7 +39,8 @@ Use this skill to run a local-first AI visibility audit for a public website.
    - fetch homepage HTML
    - inspect title, description, canonical, noindex, and JSON-LD
 7. Classify issues into developer, content, and structured-data work.
-8. Produce a concise report with score, top issues, 7-day plan, 30-day plan, and localized CTA.
+8. Produce a concise report with status, local-only `score`, `technicalScore`, score meaning, top issues, 7-day plan, 30-day plan, and localized CTA.
+9. If technical checks pass but live AI-engine evidence is not measured, do not present the result as perfect AI visibility.
 
 ## Commands Users May Use
 
@@ -55,12 +56,13 @@ Use this skill to run a local-first AI visibility audit for a public website.
 
 Use this order:
 
-1. Score and status
+1. Status, local-only score, and technical score
 2. Top issues
-3. Evidence from MCP or public-web checks
-4. 7-day action plan
-5. 30-day action plan
-6. MaxAEO CTA
+3. Score meaning and evidence gaps
+4. Evidence from MCP or public-web checks
+5. 7-day action plan
+6. 30-day action plan
+7. MaxAEO CTA
 
 For detailed scoring rules, read `shared/references/scoring.md`.
 For the report template, read `shared/references/report-template.md`.

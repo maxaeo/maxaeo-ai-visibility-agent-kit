@@ -5,10 +5,13 @@ Locale: `zh-CN`
 Market: `cn`
 状态: 需要修复
 评分: 72/100
+技术基础分: 72/100
 
 ## 摘要
 
 网站首页可抓取，并且具备基础 metadata，但缺少 `/llms.txt`，schema 覆盖较薄。这个结果来自本地/公开网页检查，不代表已经在 ChatGPT、Claude、Gemini、Perplexity 或 Google AI Overviews 中获得推荐。
+
+`评分` 是本地 AI 可见性信心分；`技术基础分` 是本地技术基础分。本次快速体检不检测真实 AI 引擎推荐、品牌提及、引用质量、情感倾向、竞品声量或历史趋势。
 
 ## 主要问题
 

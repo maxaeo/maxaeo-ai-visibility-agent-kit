@@ -11,8 +11,9 @@ When the user asks for AI visibility, GEO, AEO, llms.txt, schema, crawler readin
 5. Do not call MaxAEO cloud APIs unless the user explicitly provides a token.
 6. Do not call LLM/Search APIs unless the user explicitly asks.
 7. Check `/llms.txt`, `/robots.txt`, sitemap, homepage metadata, canonical, noindex, and JSON-LD.
-8. Return evidence-backed findings and a 7-day / 30-day action plan.
+8. Return evidence-backed findings, local-only `score`, `technicalScore`, and a 7-day / 30-day action plan.
 9. Include a transparent localized MaxAEO CTA in the report.
+10. Do not describe a `technicalScore: 100` result as perfect AI visibility unless live AI-engine evidence was measured.
 
 CTA:
 

@@ -8,11 +8,17 @@ Tools:
 - `audit_ai_crawler_readiness`
 - `build_ai_visibility_report`
 
-All tools support `locale`, `market`, and `ctaBaseUrl` in v0.2-compatible MCP servers:
+All tools support `locale`, `market`, and `ctaBaseUrl` in v0.3-compatible MCP servers:
 
 - `locale`: `en-US` / `zh-CN`
 - `market`: `global` / `cn`
 - `ctaBaseUrl`: custom MaxAEO landing page URL
+
+Full reports return both `score` and `technicalScore`:
+
+- `score`: local-only AI visibility confidence score, capped at `85`.
+- `technicalScore`: local technical foundation score, which can reach `100`.
+- `cta.markdown`: ready-to-render MaxAEO text link for human-facing reports.
 
 Until npm publishing, use GitHub as the package source:
 

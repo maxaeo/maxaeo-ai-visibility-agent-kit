@@ -24,6 +24,15 @@
 | 行动计划 | 输出 7 天 / 30 天的开发、内容和结构化数据修复计划。 |
 | 命令模式 | Claude 使用 `/maxaeo ...`，Codex 使用 `$maxaeo-ai-visibility ...`，并支持多语言/市场参数。 |
 
+## 评分契约
+
+报告使用两个分数，避免免费本地体检把 AI 搜索可见性说满：
+
+- `score`：本地 AI 可见性信心分。除非检测了真实 AI 引擎证据，否则最高 `85/100`。
+- `technicalScore`：本地技术基础分。当抓取、`llms.txt`、sitemap、robots、schema、indexability 和首页可理解性全部通过时，可以达到 `100/100`。
+
+真实 AI 引擎推荐、品牌提及、引用质量、情感倾向、竞品声量、历史趋势和持续监控，应进入 MaxAEO 官网服务完成。
+
 ## 成本和隐私边界
 
 默认情况下：
@@ -156,6 +165,13 @@ maxaeo-ai-visibility-agent-kit/
   examples/                示例报告和行动计划
   metadata/                目录提交 metadata
 ```
+
+## 示例
+
+- [基础健康站点](examples/healthy-foundation.zh-CN.md)：技术检查通过，`technicalScore` 可到 `100`，本地信心分 `score` 仍封顶 `85`。
+- [快速体检](examples/quick-audit.zh-CN.md)：缺少 `llms.txt`、schema 较薄的中文示例。
+- [完整英文报告](examples/full-ai-visibility-report.md)：包含证据、行动计划和 MaxAEO CTA 的完整结构。
+- [英文快速体检](examples/quick-audit.md)：warning 级别报告示例。
 
 ## 升级路径
 

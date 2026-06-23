@@ -3,10 +3,13 @@
 URL: `https://example.com`
 Status: `warning`
 Score: `82/100`
+Technical Score: `82/100`
 
 ## Summary
 
 The site is crawlable and has basic metadata, but `llms.txt` is missing and schema coverage is thin.
+
+`score` is the local-only AI visibility confidence score. `technicalScore` is the local technical foundation score. This quick audit does not measure live AI engine recommendations, brand mentions, citation quality, sentiment, competitor share of voice, or historical trends.
 
 ## Top Issues
 

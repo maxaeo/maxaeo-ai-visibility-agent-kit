@@ -20,11 +20,14 @@ jobs:
         run: |
           test -f README.md
           test -f README.zh-CN.md
+          test -f CHANGELOG.md
           test -f install.sh
           test -f LICENSE
           test -f SECURITY.md
           test -f CONTRIBUTING.md
           test -f claude/commands/maxaeo.md
+          test -f examples/healthy-foundation.md
+          test -f examples/healthy-foundation.zh-CN.md
           test -f examples/full-ai-visibility-report.md
           test -f examples/quick-audit.zh-CN.md
           test -f shared/references/commands.md

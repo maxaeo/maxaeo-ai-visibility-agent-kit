@@ -48,6 +48,7 @@ Aliases:
    - `ctaBaseUrl` from `--cta-url`
 5. If the MCP server is unavailable, perform the fallback public-web checks from the MaxAEO AI Visibility skill.
 6. Return the report in the requested language with evidence, top issues, 7-day actions, 30-day actions, and the transparent MaxAEO CTA.
+7. Include both `score` and `technicalScore`. If technical checks pass but live AI-engine evidence is not measured, do not present the result as perfect AI visibility.
 
 ## Safety
 

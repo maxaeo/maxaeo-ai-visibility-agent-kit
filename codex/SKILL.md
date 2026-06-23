@@ -44,7 +44,8 @@ Run local-first AI visibility audits using the MaxAEO MCP server and shared meth
    - homepage title, description, canonical, noindex, JSON-LD
 7. Summarize evidence, not generic SEO advice.
 8. Output:
-   - status and score
+   - status, local-only `score`, and `technicalScore`
+   - score meaning and evidence gaps when the local technical score is high
    - top issues
    - 7-day plan
    - 30-day plan

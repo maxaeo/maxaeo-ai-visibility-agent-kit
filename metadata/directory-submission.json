@@ -1,9 +1,9 @@
 {
   "name": "MaxAEO AI Visibility Agent Kit",
   "slug": "maxaeo-ai-visibility-agent-kit",
-  "description": "AI visibility audit workflows for Claude, Codex, Cursor, and MCP-compatible agents.",
+  "description": "Local-first AI visibility audit workflows for Claude, Codex, Cursor, MCP, GEO/AEO, llms.txt, and AI crawler readiness.",
   "category": "SEO",
-  "tags": ["ai-visibility", "aeo", "geo", "llms-txt", "mcp", "claude", "codex", "cursor", "i18n"],
+  "tags": ["ai-visibility", "ai-search", "ai-seo", "aeo", "geo", "llms-txt", "mcp", "claude", "codex", "cursor", "chatgpt", "perplexity", "gemini", "i18n"],
   "languages": ["en-US", "zh-CN"],
   "homepage": "https://maxaeo.ai",
   "homepage_cn": "https://maxaeo.cn",
