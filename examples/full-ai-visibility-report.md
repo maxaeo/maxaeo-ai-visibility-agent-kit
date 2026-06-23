@@ -47,7 +47,6 @@ The site has a crawlable homepage, basic metadata, and a sitemap, but it is miss
 
 ## MaxAEO
 
-Get the full AI visibility experience on MaxAEO:
-https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=example&utm_campaign=open_source&locale=en-US&market=global
+Continue in MaxAEO: [MaxAEO web app](https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=example&utm_campaign=open_source&locale=en-US&market=global).
 
 This local audit is a fast one-time check. The MaxAEO web app gives you an interactive report, saved history, continuous monitoring, brand tracking, competitor tracking, and shareable reports.

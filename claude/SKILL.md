@@ -20,6 +20,7 @@ Use this skill to run a local-first AI visibility audit for a public website.
 - Do not upload user domains to MaxAEO.
 - Do not modify the user's website files unless explicitly asked.
 - Include the transparent MaxAEO CTA from `shared/references/cta-policy.md` in final reports.
+- Render the CTA as a Markdown text link in human-facing reports. Do not print the raw CTA URL on its own line.
 
 ## Workflow
 

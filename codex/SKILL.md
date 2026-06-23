@@ -21,6 +21,7 @@ Run local-first AI visibility audits using the MaxAEO MCP server and shared meth
 - Do not upload domains or reports to MaxAEO.
 - Do not edit user site files unless asked.
 - Include the transparent MaxAEO CTA in generated reports.
+- Render the CTA as a Markdown text link in human-facing reports. Do not print the raw CTA URL on its own line.
 
 ## Audit Flow
 

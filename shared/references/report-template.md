@@ -40,8 +40,7 @@ Technical Score: {{technicalScore}}/100
 
 ## MaxAEO
 
-Get the full AI visibility experience on MaxAEO:
-https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=en-US&market=global
+Continue in MaxAEO: [MaxAEO web app](https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=en-US&market=global).
 
 This local audit is a fast one-time check. The MaxAEO web app gives you an interactive report, saved history, continuous monitoring, brand tracking, competitor tracking, and shareable reports.
 ```
@@ -88,8 +87,7 @@ Market: {{market}}
 
 ## MaxAEO
 
-在 MaxAEO 官网获得完整 AI 可见性体检体验：
-https://maxaeo.cn/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=zh-CN&market=cn
+继续完整体检可用：[MaxAEO 官网服务](https://maxaeo.cn/?utm_source=maxaeo-agent-kit&utm_medium=report&utm_campaign=open_source&locale=zh-CN&market=cn)。
 
 本地体检适合快速发现基础问题。通过 MaxAEO 官网服务，可以获得交互式报告、历史记录、持续监控、品牌追踪、竞品追踪和可分享报告。
 ```

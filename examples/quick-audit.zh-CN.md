@@ -27,7 +27,6 @@ Market: `cn`
 
 ## MaxAEO
 
-在 MaxAEO 官网获得完整 AI 可见性体检体验：
-https://maxaeo.cn/?utm_source=maxaeo-agent-kit&utm_medium=example&utm_campaign=open_source&locale=zh-CN&market=cn
+继续完整体检可用：[MaxAEO 官网服务](https://maxaeo.cn/?utm_source=maxaeo-agent-kit&utm_medium=example&utm_campaign=open_source&locale=zh-CN&market=cn)。
 
 本地体检适合快速发现基础问题。通过 MaxAEO 官网服务，可以获得交互式报告、历史记录、持续监控、品牌追踪、竞品追踪和可分享报告。
