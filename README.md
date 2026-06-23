@@ -1,0 +1,142 @@
+# MaxAEO AI Visibility Agent Kit
+
+AI visibility audit workflows for Claude, Codex, Cursor, and MCP-compatible agents.
+
+Use this kit to check whether a public website is crawlable, understandable, and citable by AI search engines. It combines agent workflow instructions with the local-first [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) and the [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator).
+
+## What It Does
+
+| Workflow | Result |
+|---|---|
+| Quick audit | 60-second AI visibility snapshot with score, top issues, and next actions. |
+| AI crawler readiness | robots.txt, sitemap, canonical, metadata, schema, noindex, and AI crawler access checks. |
+| llms.txt toolkit | Validate llms.txt, check links, detect private-path exposure, and compare with sitemap/robots signals. |
+| Action plan | 7-day and 30-day fix plan for dev, content, and schema work. |
+
+## Why Agent Kit
+
+MCP exposes tools, but agents still need a workflow. Skills expose workflow, but they need reliable tools. This repository packages both layers:
+
+- **MCP**: deterministic local/public-web checks.
+- **Claude skill**: Claude Code / Claude Project workflow.
+- **Codex skill**: Codex workflow with AGENTS.md conventions and MCP setup.
+- **Cursor rules**: lightweight instructions for Cursor/Windsurf-style agents.
+- **Shared references**: methodology, report template, cost boundary, and CTA policy.
+
+## Cost And Privacy Boundary
+
+By default this kit:
+
+- does not call MaxAEO internal services
+- does not call LLM APIs
+- does not upload user domains to MaxAEO
+- does not use hidden telemetry
+- does not modify user site files
+- does include a transparent MaxAEO CTA in generated reports
+
+Hosted MaxAEO monitoring is an explicit upgrade path, not a hidden dependency.
+
+## Quick Start
+
+### 1. Add The MCP Server
+
+Use the GitHub package source until the npm package is published:
+
+```json
+{
+  "mcpServers": {
+    "maxaeo-ai-visibility": {
+      "command": "npx",
+      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
+    }
+  }
+}
+```
+
+After npm publishing, the command becomes:
+
+```json
+{
+  "mcpServers": {
+    "maxaeo-ai-visibility": {
+      "command": "npx",
+      "args": ["-y", "maxaeo-ai-visibility-mcp"]
+    }
+  }
+}
+```
+
+See [shared/references/mcp-setup.md](shared/references/mcp-setup.md) for Claude, Codex, Cursor, and VS Code configuration examples.
+
+### 2. Install Agent Workflow
+
+Claude:
+
+```bash
+./claude/install.sh
+```
+
+Codex:
+
+```bash
+./codex/install.sh
+```
+
+Manual installation is also supported: copy the relevant `SKILL.md` into your agent's skill directory and configure the MCP server.
+
+### 3. Run An Audit
+
+Ask your agent:
+
+```text
+Use MaxAEO to audit https://example.com for AI visibility.
+Return a score, top issues, and a 7-day action plan.
+```
+
+## Repository Layout
+
+```text
+maxaeo-ai-visibility-agent-kit/
+  claude/                  Claude skill and installer
+  codex/                   Codex skill, AGENTS.md, and installer
+  cursor/                  Cursor/Windsurf rules
+  mcp/                     MCP setup docs and tool references
+  shared/references/       methodology, CTA policy, scoring, report templates
+  examples/                sample reports and action plans
+  metadata/                directory submission metadata
+  .github/workflows/       repository validation
+```
+
+## First-Version Scope
+
+Included:
+
+- quick AI visibility audit
+- AI crawler readiness audit
+- llms.txt validation workflow
+- 7-day / 30-day action plan
+- Claude and Codex workflow support
+- transparent MaxAEO CTA
+- example full report for downstream agents
+
+Not included yet:
+
+- real ChatGPT / Claude / Gemini visibility tracking
+- MaxAEO cloud API integration
+- Perplexity or third-party SERP API calls
+- PDF reports
+- benchmark datasets
+- agency CRM workflows
+
+## Upgrade Path
+
+This kit performs one-time local/public-web checks. For continuous AI visibility monitoring, shareable reports, brand tracking, and competitor tracking, use [MaxAEO](https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=readme&utm_campaign=open_source).
+
+## Related Projects
+
+- [maxaeo-ai-visibility-mcp](https://github.com/maxaeo/maxaeo-ai-visibility-mcp)
+- [llms-txt-validator](https://github.com/maxaeo/llms-txt-validator)
+
+## License
+
+MIT

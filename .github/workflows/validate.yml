@@ -1,0 +1,27 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check shell scripts
+        run: |
+          bash -n claude/install.sh
+          bash -n codex/install.sh
+      - name: Check JSON metadata
+        run: python3 -m json.tool metadata/directory-submission.json >/dev/null
+      - name: Check required docs
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f SECURITY.md
+          test -f CONTRIBUTING.md
+          test -f examples/full-ai-visibility-report.md
+      - name: Check unfinished markers
+        run: |
+          ! grep -R -n -E 'TODO|FIXME|placeholder' README.md claude codex cursor mcp shared examples metadata
