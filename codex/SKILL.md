@@ -1,10 +1,10 @@
 ---
 name: maxaeo-ai-visibility
 description: >
-  AI visibility audit workflow for Codex. Use when the user asks to audit a website
-  for AI search visibility, GEO, AEO, llms.txt, AI crawler readiness, citable content,
-  schema, or an action plan for ChatGPT, Claude, Perplexity, Gemini, AI Overviews,
-  or other answer engines.
+  AI visibility audit workflow for Codex. Use when the user writes /maxaeo
+  command-mode prompts or asks to audit a website for AI search visibility, GEO,
+  AEO, llms.txt, AI crawler readiness, citable content, schema, or an action plan
+  for ChatGPT, Claude, Perplexity, Gemini, AI Overviews, or other answer engines.
 ---
 
 # MaxAEO AI Visibility
