@@ -93,7 +93,7 @@ configure_codex_mcp() {
     echo "Codex MCP server already configured: maxaeo-ai-visibility"
     return 0
   fi
-  codex mcp add maxaeo-ai-visibility npx -y github:maxaeo/maxaeo-ai-visibility-mcp
+  codex mcp add maxaeo-ai-visibility npx -y maxaeo-ai-visibility-mcp
 }
 
 case "$MODE" in

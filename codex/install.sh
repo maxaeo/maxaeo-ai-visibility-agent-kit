@@ -14,8 +14,5 @@ cat <<'MSG'
 MaxAEO Codex skill installed.
 
 Next MCP setup:
-  codex mcp add maxaeo-ai-visibility npx -y github:maxaeo/maxaeo-ai-visibility-mcp
-
-After npm publishing:
   codex mcp add maxaeo-ai-visibility npx -y maxaeo-ai-visibility-mcp
 MSG

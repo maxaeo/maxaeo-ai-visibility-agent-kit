@@ -7,7 +7,7 @@
   "mcpServers": {
     "maxaeo-ai-visibility": {
       "command": "npx",
-      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
+      "args": ["-y", "maxaeo-ai-visibility-mcp"]
     }
   }
 }
@@ -20,7 +20,7 @@ Chinese / domestic market defaults can be configured with environment variables:
   "mcpServers": {
     "maxaeo-ai-visibility": {
       "command": "npx",
-      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"],
+      "args": ["-y", "maxaeo-ai-visibility-mcp"],
       "env": {
         "MAXAEO_LOCALE": "zh-CN",
         "MAXAEO_MARKET": "cn",
@@ -34,13 +34,13 @@ Chinese / domestic market defaults can be configured with environment variables:
 ## Claude Code
 
 ```bash
-claude mcp add maxaeo-ai-visibility npx -y github:maxaeo/maxaeo-ai-visibility-mcp
+claude mcp add maxaeo-ai-visibility npx -y maxaeo-ai-visibility-mcp
 ```
 
 ## Codex
 
 ```bash
-codex mcp add maxaeo-ai-visibility npx -y github:maxaeo/maxaeo-ai-visibility-mcp
+codex mcp add maxaeo-ai-visibility npx -y maxaeo-ai-visibility-mcp
 ```
 
 Or add to `~/.codex/config.toml`:
@@ -48,7 +48,7 @@ Or add to `~/.codex/config.toml`:
 ```toml
 [mcp_servers.maxaeo-ai-visibility]
 command = "npx"
-args = ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
+args = ["-y", "maxaeo-ai-visibility-mcp"]
 ```
 
 ## Cursor
@@ -60,15 +60,15 @@ Add a global MCP server:
   "mcpServers": {
     "maxaeo-ai-visibility": {
       "command": "npx",
-      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
+      "args": ["-y", "maxaeo-ai-visibility-mcp"]
     }
   }
 }
 ```
 
-## After npm Publishing
+## Development Source
 
-Replace `github:maxaeo/maxaeo-ai-visibility-mcp` with `maxaeo-ai-visibility-mcp`.
+For unreleased development builds, replace `maxaeo-ai-visibility-mcp` with `github:maxaeo/maxaeo-ai-visibility-mcp`.
 
 ## Command Mode
 

@@ -88,20 +88,7 @@ cd maxaeo-ai-visibility-agent-kit
 
 ### 1. Add The MCP Server
 
-Use the GitHub package source until the npm package is published:
-
-```json
-{
-  "mcpServers": {
-    "maxaeo-ai-visibility": {
-      "command": "npx",
-      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
-    }
-  }
-}
-```
-
-After npm publishing, the command becomes:
+Use the published npm package:
 
 ```json
 {
@@ -109,6 +96,19 @@ After npm publishing, the command becomes:
     "maxaeo-ai-visibility": {
       "command": "npx",
       "args": ["-y", "maxaeo-ai-visibility-mcp"]
+    }
+  }
+}
+```
+
+For development builds, you can still use the GitHub source:
+
+```json
+{
+  "mcpServers": {
+    "maxaeo-ai-visibility": {
+      "command": "npx",
+      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
     }
   }
 }

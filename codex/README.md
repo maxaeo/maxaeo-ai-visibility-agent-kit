@@ -9,12 +9,6 @@ Install the Codex skill:
 Add the MCP server:
 
 ```bash
-codex mcp add maxaeo-ai-visibility npx -y github:maxaeo/maxaeo-ai-visibility-mcp
-```
-
-After npm publishing:
-
-```bash
 codex mcp add maxaeo-ai-visibility npx -y maxaeo-ai-visibility-mcp
 ```
 

@@ -20,14 +20,14 @@ Full reports return both `score` and `technicalScore`:
 - `technicalScore`: local technical foundation score, which can reach `100`.
 - `cta.markdown`: ready-to-render MaxAEO text link for human-facing reports.
 
-Until npm publishing, use GitHub as the package source:
+Use the published npm package:
 
 ```json
 {
   "mcpServers": {
     "maxaeo-ai-visibility": {
       "command": "npx",
-      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
+      "args": ["-y", "maxaeo-ai-visibility-mcp"]
     }
   }
 }
@@ -40,7 +40,7 @@ Chinese / domestic market:
   "mcpServers": {
     "maxaeo-ai-visibility": {
       "command": "npx",
-      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"],
+      "args": ["-y", "maxaeo-ai-visibility-mcp"],
       "env": {
         "MAXAEO_LOCALE": "zh-CN",
         "MAXAEO_MARKET": "cn",
@@ -51,14 +51,14 @@ Chinese / domestic market:
 }
 ```
 
-After npm publishing:
+For development builds, you can still use the GitHub source:
 
 ```json
 {
   "mcpServers": {
     "maxaeo-ai-visibility": {
       "command": "npx",
-      "args": ["-y", "maxaeo-ai-visibility-mcp"]
+      "args": ["-y", "github:maxaeo/maxaeo-ai-visibility-mcp"]
     }
   }
 }
