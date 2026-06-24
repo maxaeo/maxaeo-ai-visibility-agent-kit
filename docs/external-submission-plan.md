@@ -6,9 +6,9 @@ This plan keeps MaxAEO's first open-source distribution focused on GitHub, npm, 
 
 | Priority | Target | Channel | Fit | Submission path | Status |
 |---|---|---|---|---|---|
-| P0 | `punkpeye/awesome-mcp-servers` | MCP directory + Glama sync | Very high | PR to GitHub list, likely Marketing or Search/Data Extraction | ready |
-| P0 | `appcypher/awesome-mcp-servers` | MCP awesome list | High | PR to GitHub list, likely Marketing | ready |
-| P0 | `mcpservers.org` via `wong2/awesome-mcp-servers` | MCP server directory | High | Website form only; repo says no PRs | ready |
+| P0 | `punkpeye/awesome-mcp-servers` | MCP directory + Glama sync | Very high | PR to GitHub list, Marketing | submitted |
+| P0 | `appcypher/awesome-mcp-servers` | MCP awesome list | High | PR to GitHub list, Marketing | blocked |
+| P0 | `mcpservers.org` via `wong2/awesome-mcp-servers` | MCP server directory | High | Website form only; repo says no PRs | submitted |
 | P1 | `amplifying-ai/awesome-generative-engine-optimization` | GEO resource list | High | PR or issue depending current repo structure | ready |
 | P1 | `YourPalZack/awesome-ai-seo-tools` | AI SEO tools list | Medium | PR under AI Search Analysis or Technical SEO & Site Audits | ready |
 | P1 | `ccplugins/awesome-claude-code-plugins` | Claude Code plugin list | Medium | PR or issue if accepting MCP/commands | ready |
@@ -30,6 +30,14 @@ This plan keeps MaxAEO's first open-source distribution focused on GitHub, npm, 
 3. Submit to GEO and AI SEO lists.
 4. Submit to Claude Code plugin/resource lists.
 5. Submit `https://maxaeo.ai/llms.txt` to llms.txt indexes.
+
+## Submission Log
+
+| Date | Target | Status | Link | Notes |
+|---|---|---|---|---|
+| 2026-06-24 | `punkpeye/awesome-mcp-servers` | submitted | https://github.com/punkpeye/awesome-mcp-servers/pull/8614 | PR is open and mergeable. Title includes `🤖🤖🤖` per contributor guidance. |
+| 2026-06-24 | `mcpservers.org` | submitted | https://mcpservers.org/submit | Free listing submitted successfully. Review window shown by site: within 12 hours. Contact email: `support@maxaeo.ai`. |
+| 2026-06-24 | `appcypher/awesome-mcp-servers` | blocked | https://github.com/appcypher/awesome-mcp-servers/compare/main...mimimile:awesome-mcp-servers-appcypher:add-maxaeo-ai-visibility-mcp?expand=1 | Fork branch and commit are ready, but GitHub API/CLI returned `CreatePullRequest` permission error and REST 404. Retry from GitHub web UI or after account/repo permissions change. |
 
 ## Positioning Rules
 
