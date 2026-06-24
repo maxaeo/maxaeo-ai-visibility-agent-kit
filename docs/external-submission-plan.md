@@ -13,7 +13,7 @@ This plan keeps MaxAEO's first open-source distribution focused on GitHub, npm, 
 | P1 | `YourPalZack/awesome-ai-seo-tools` | AI SEO tools list | Medium | PR under AI Search Analysis | submitted |
 | P1 | `ccplugins/awesome-claude-code-plugins` | Claude Code plugin list | Medium | Issue asking preferred external MCP/plugin format | submitted |
 | P2 | `hesreallyhim/awesome-claude-code` | Claude Code resource list | High reach, currently reorganizing | Watch or issue first; README is in transition | hold |
-| P2 | `SecretiveShell/Awesome-llms-txt` | llms.txt index | Medium | PR adding `https://maxaeo.ai/llms.txt`; this promotes MaxAEO site, not the tool | ready |
+| P2 | `SecretiveShell/Awesome-llms-txt` | llms.txt index | Medium | PR adding `https://maxaeo.ai/llms.txt`; this promotes MaxAEO site, not the tool | submitted |
 
 ## Repository Links
 
@@ -35,12 +35,13 @@ This plan keeps MaxAEO's first open-source distribution focused on GitHub, npm, 
 
 | Date | Target | Status | Link | Notes |
 |---|---|---|---|---|
-| 2026-06-24 | `punkpeye/awesome-mcp-servers` | submitted | https://github.com/punkpeye/awesome-mcp-servers/pull/8614 | PR is open and mergeable. Title includes `🤖🤖🤖` per contributor guidance. |
+| 2026-06-24 | `punkpeye/awesome-mcp-servers` | submitted | https://github.com/punkpeye/awesome-mcp-servers/pull/8614 | PR is open and mergeable. Title includes `🤖🤖🤖` per contributor guidance. Updated with Glama score badge after bot request. |
 | 2026-06-24 | `mcpservers.org` | submitted | https://mcpservers.org/submit | Free listing submitted successfully. Review window shown by site: within 12 hours. Contact email: `support@maxaeo.ai`. |
-| 2026-06-24 | `appcypher/awesome-mcp-servers` | blocked | https://github.com/appcypher/awesome-mcp-servers/compare/main...mimimile:awesome-mcp-servers-appcypher:add-maxaeo-ai-visibility-mcp?expand=1 | Fork branch and commit are ready, but GitHub API/CLI returned `CreatePullRequest` permission error and REST 404. Retry from GitHub web UI or after account/repo permissions change. |
+| 2026-06-24 | `appcypher/awesome-mcp-servers` | blocked | https://github.com/appcypher/awesome-mcp-servers/compare/main...mimimile:awesome-mcp-servers-appcypher:add-maxaeo-ai-visibility-mcp?expand=1 | Fork branch and commit are ready, but the compare page says the repository owner has disabled opening pull requests. |
 | 2026-06-24 | `amplifying-ai/awesome-generative-engine-optimization` | submitted | https://github.com/amplifying-ai/awesome-generative-engine-optimization/pull/61 | PR adds MaxAEO AI Visibility MCP under Open Source Data / Evals. PR is open and mergeable. |
 | 2026-06-24 | `YourPalZack/awesome-ai-seo-tools` | submitted | https://github.com/YourPalZack/awesome-ai-seo-tools/pull/7 | PR adds MaxAEO AI Visibility MCP under AI Search Analysis. PR is open and mergeable. |
 | 2026-06-24 | `ccplugins/awesome-claude-code-plugins` | submitted | https://github.com/ccplugins/awesome-claude-code-plugins/issues/282 | Issue asks whether maintainers prefer an external MCP server entry, a plugin wrapper under `plugins/`, or a Claude Code marketplace package before PR. |
+| 2026-06-24 | `SecretiveShell/Awesome-llms-txt` | submitted | https://github.com/SecretiveShell/Awesome-llms-txt/pull/86 | PR adds `https://maxaeo.ai/llms.txt` to the index. The file returns HTTP 200. |
 
 ## Positioning Rules
 
