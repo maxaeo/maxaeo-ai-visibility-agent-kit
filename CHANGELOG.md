@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added an external submission plan with prioritized MCP, Claude Code, GEO, AI SEO, and llms.txt directory targets.
+- Added reusable submission copy for MCP directories, awesome lists, and social/community launch posts.
 - Added search-focused setup docs for Codex and Claude.
 - Added AI visibility audit examples for healthy sites, missing `llms.txt`, Chinese domestic-market output, and crawler readiness.
 - Added local audit vs MaxAEO web app positioning to clarify the free local tool and hosted monitoring boundary.

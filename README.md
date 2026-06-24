@@ -43,6 +43,7 @@ The local audit is free and public-web-only. For continuous monitoring, historic
 - [Audit examples](docs/ai-visibility-audit-examples.md)
 - [Local audit vs MaxAEO web app](docs/local-audit-vs-maxaeo.md)
 - [Distribution checklist](docs/distribution-checklist.md)
+- [External submission plan](docs/external-submission-plan.md)
 
 ## Use Cases
 
@@ -223,6 +224,7 @@ maxaeo-ai-visibility-agent-kit/
   shared/references/       methodology, CTA policy, scoring, report templates
   examples/                sample reports and action plans
   metadata/                directory submission metadata
+  metadata/submissions/    copy blocks for MCP directories, awesome lists, and social launch posts
   .github/workflows/       repository validation
 ```
 
@@ -233,6 +235,7 @@ maxaeo-ai-visibility-agent-kit/
 - [Full AI visibility report](examples/full-ai-visibility-report.md): complete report structure with evidence, action plan, and MaxAEO CTA.
 - [Chinese quick audit](examples/quick-audit.zh-CN.md): localized domestic-market report.
 - [Audit examples guide](docs/ai-visibility-audit-examples.md): copyable prompts for Codex, Claude, `llms.txt`, crawler readiness, and Chinese domestic-market reports.
+- [External submission plan](docs/external-submission-plan.md): prioritized third-party directory targets and submission rules.
 
 ## First-Version Scope
 

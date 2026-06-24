@@ -43,6 +43,7 @@ Claude 用户可以使用：
 - [体检样例](docs/ai-visibility-audit-examples.md)
 - [本地体检 vs MaxAEO 官网服务](docs/local-audit-vs-maxaeo.md)
 - [分发清单](docs/distribution-checklist.md)
+- [外部分发计划](docs/external-submission-plan.md)
 
 ## 使用场景
 
@@ -212,6 +213,7 @@ maxaeo-ai-visibility-agent-kit/
   shared/references/       方法论、CTA policy、评分、命令语法、报告模板
   examples/                示例报告和行动计划
   metadata/                目录提交 metadata
+  metadata/submissions/    MCP 目录、awesome list 和社区发布文案
 ```
 
 ## 示例
@@ -221,6 +223,7 @@ maxaeo-ai-visibility-agent-kit/
 - [完整英文报告](examples/full-ai-visibility-report.md)：包含证据、行动计划和 MaxAEO CTA 的完整结构。
 - [英文快速体检](examples/quick-audit.md)：warning 级别报告示例。
 - [体检样例指南](docs/ai-visibility-audit-examples.md)：Codex、Claude、`llms.txt`、crawler readiness 和中文国内市场报告的可复制 prompt。
+- [外部分发计划](docs/external-submission-plan.md)：第三方目录目标、优先级和提交规则。
 
 ## 升级路径
 

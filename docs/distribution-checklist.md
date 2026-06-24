@@ -32,6 +32,13 @@ Prepare submissions for:
 - AI SEO tool directories
 - open-source marketing tool directories
 
+Prepared assets:
+
+- [External submission plan](external-submission-plan.md)
+- [MCP directory submission](../metadata/submissions/mcp-directory.md)
+- [Awesome list entry drafts](../metadata/submissions/awesome-list-entry.md)
+- [Social launch copy](../metadata/submissions/social-launch.md)
+
 Submission copy:
 
 ```text

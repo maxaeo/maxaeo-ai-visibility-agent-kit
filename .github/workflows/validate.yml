@@ -31,6 +31,10 @@ jobs:
           test -f docs/ai-visibility-audit-examples.md
           test -f docs/local-audit-vs-maxaeo.md
           test -f docs/distribution-checklist.md
+          test -f docs/external-submission-plan.md
+          test -f metadata/submissions/mcp-directory.md
+          test -f metadata/submissions/awesome-list-entry.md
+          test -f metadata/submissions/social-launch.md
           test -f examples/healthy-foundation.md
           test -f examples/healthy-foundation.zh-CN.md
           test -f examples/full-ai-visibility-report.md
