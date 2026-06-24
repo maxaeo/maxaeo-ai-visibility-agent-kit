@@ -10,11 +10,14 @@ This checklist keeps the first MaxAEO open-source project focused on GitHub, npm
 - Link to setup guides for Codex, Claude, Cursor, and MCP clients.
 - Link to examples showing healthy foundation, missing `llms.txt`, and Chinese domestic CTA output.
 - Keep the CTA as a text link pointing to the MaxAEO homepage.
+- Keep `CONTRIBUTING.md` and issue templates visible so directory maintainers can verify the local-first boundary.
+- Keep factual directory-listing copy in the MCP README so third-party submissions stay consistent and low-advertising.
 
 ## npm Discovery
 
 - Package name: `maxaeo-ai-visibility-mcp`
 - Keep npm keywords aligned with GitHub topics.
+- Include platform and crawler search terms such as Claude Code, OpenAI Codex, ChatGPT, GPTBot, ClaudeBot, Perplexity, Gemini, AI Overviews, and AI citation.
 - Keep README examples short and copyable.
 - Confirm `npm view maxaeo-ai-visibility-mcp version` returns the expected release.
 - Use patch releases for npm README or keyword updates because npm pages are based on published package metadata.

@@ -35,6 +35,7 @@ This plan keeps MaxAEO's first open-source distribution focused on GitHub, npm, 
 
 | Date | Target | Status | Link | Notes |
 |---|---|---|---|---|
+| 2026-06-24 | `maxaeo/maxaeo-ai-visibility-mcp` | completed | https://github.com/maxaeo/maxaeo-ai-visibility-mcp/commit/9ca3758c65ebc0368fc985a57e776fb1292c605a | Added contribution guidance, issue templates, directory-listing copy, and expanded npm discovery keywords. GitHub Actions passed. |
 | 2026-06-24 | `punkpeye/awesome-mcp-servers` | submitted | https://github.com/punkpeye/awesome-mcp-servers/pull/8614 | PR is open and mergeable. Title includes `🤖🤖🤖` per contributor guidance. Updated with Glama score badge after bot request. |
 | 2026-06-24 | `mcpservers.org` | submitted | https://mcpservers.org/submit | Free listing submitted successfully. Review window shown by site: within 12 hours. Contact email: `support@maxaeo.ai`. |
 | 2026-06-24 | `appcypher/awesome-mcp-servers` | blocked | https://github.com/appcypher/awesome-mcp-servers/compare/main...mimimile:awesome-mcp-servers-appcypher:add-maxaeo-ai-visibility-mcp?expand=1 | Fork branch and commit are ready, but the compare page says the repository owner has disabled opening pull requests. |
