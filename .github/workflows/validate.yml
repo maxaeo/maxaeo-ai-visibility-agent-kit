@@ -26,6 +26,11 @@ jobs:
           test -f SECURITY.md
           test -f CONTRIBUTING.md
           test -f claude/commands/maxaeo.md
+          test -f docs/codex-setup.md
+          test -f docs/claude-setup.md
+          test -f docs/ai-visibility-audit-examples.md
+          test -f docs/local-audit-vs-maxaeo.md
+          test -f docs/distribution-checklist.md
           test -f examples/healthy-foundation.md
           test -f examples/healthy-foundation.zh-CN.md
           test -f examples/full-ai-visibility-report.md
@@ -33,4 +38,4 @@ jobs:
           test -f shared/references/commands.md
       - name: Check unfinished markers
         run: |
-          ! grep -R -n -E 'TODO|FIXME|placeholder' README.md README.zh-CN.md claude codex cursor mcp shared examples metadata
+          ! grep -R -n -E 'TODO|FIXME|placeholder' README.md README.zh-CN.md claude codex cursor docs mcp shared examples metadata

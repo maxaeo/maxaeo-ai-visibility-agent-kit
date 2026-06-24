@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Added search-focused setup docs for Codex and Claude.
+- Added AI visibility audit examples for healthy sites, missing `llms.txt`, Chinese domestic-market output, and crawler readiness.
+- Added local audit vs MaxAEO web app positioning to clarify the free local tool and hosted monitoring boundary.
+- Added an open-source distribution checklist for GitHub, npm, directories, and community submissions without requiring a MaxAEO website landing page.
+- Strengthened README first-screen copy for GitHub search intent around AI visibility MCP, Claude SEO audits, Codex AI visibility audits, GEO, AEO, and `llms.txt`.
+
 ## 0.3.0 - 2026-06-23
 
 - Documented the dual-score report contract:

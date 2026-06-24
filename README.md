@@ -4,7 +4,45 @@ Command-mode AI visibility audit workflows for Claude, Codex, Cursor, and MCP-co
 
 [中文文档](README.zh-CN.md)
 
-Use this kit to check whether a public website is crawlable, understandable, and citable by AI search engines. It combines GEO (generative engine optimization), AEO (answer engine optimization), AI SEO, `llms.txt`, AI crawler readiness, and command-mode agent workflows with the local-first [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) and the [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator).
+Use this kit to check whether a public website is crawlable, understandable, and citable by AI search engines. It combines GEO (generative engine optimization), AEO (answer engine optimization), AI SEO, `llms.txt`, AI crawler readiness, and command-mode workflows for Claude Code, OpenAI Codex, Cursor, Windsurf, and MCP-compatible agents.
+
+This repository is the agent workflow layer for the local-first [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) and the [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator).
+
+## 3-Minute Quick Start
+
+Install the workflow:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash
+```
+
+Add the MCP server:
+
+```bash
+codex mcp add maxaeo-ai-visibility npx -y maxaeo-ai-visibility-mcp
+```
+
+Run an audit:
+
+```text
+$maxaeo-ai-visibility audit https://example.com --locale en-US --market global
+```
+
+Claude users can use:
+
+```text
+/maxaeo audit https://example.com --locale en-US --market global
+```
+
+The local audit is free and public-web-only. For continuous monitoring, historical trends, brand tracking, competitor tracking, and citation-quality analysis, use the [MaxAEO web app](https://maxaeo.ai/?utm_source=maxaeo-agent-kit&utm_medium=readme_top&utm_campaign=open_source&locale=en-US&market=global).
+
+## Setup Guides
+
+- [Codex setup](docs/codex-setup.md)
+- [Claude setup](docs/claude-setup.md)
+- [Audit examples](docs/ai-visibility-audit-examples.md)
+- [Local audit vs MaxAEO web app](docs/local-audit-vs-maxaeo.md)
+- [Distribution checklist](docs/distribution-checklist.md)
 
 ## Use Cases
 
@@ -13,6 +51,15 @@ Use this kit to check whether a public website is crawlable, understandable, and
 - Check AEO / answer engine optimization basics for answer engines and AI search.
 - Validate `llms.txt`, robots.txt, sitemap alignment, canonical URLs, noindex, metadata, and JSON-LD.
 - Build a 7-day / 30-day action plan before upgrading to continuous MaxAEO monitoring.
+
+Common search intents this project targets:
+
+- AI visibility MCP server
+- Claude SEO audit command
+- Codex AI visibility audit
+- GEO / AEO website audit
+- `llms.txt` validator and AI crawler readiness
+- ChatGPT, Claude, Perplexity, Gemini, and AI Overviews visibility workflow
 
 ## What It Does
 
@@ -56,7 +103,7 @@ By default this kit:
 
 Hosted MaxAEO monitoring is an explicit upgrade path, not a hidden dependency.
 
-## Quick Start
+## Full Install
 
 ### One-Command Install
 
@@ -171,6 +218,7 @@ maxaeo-ai-visibility-agent-kit/
   claude/commands/         Claude slash command for /maxaeo
   codex/                   Codex skill, AGENTS.md, and installer
   cursor/                  Cursor/Windsurf rules
+  docs/                    Codex, Claude, examples, positioning, and distribution guides
   mcp/                     MCP setup docs and tool references
   shared/references/       methodology, CTA policy, scoring, report templates
   examples/                sample reports and action plans
@@ -184,6 +232,7 @@ maxaeo-ai-visibility-agent-kit/
 - [Quick audit](examples/quick-audit.md): warning-level report with missing `llms.txt` and thin schema.
 - [Full AI visibility report](examples/full-ai-visibility-report.md): complete report structure with evidence, action plan, and MaxAEO CTA.
 - [Chinese quick audit](examples/quick-audit.zh-CN.md): localized domestic-market report.
+- [Audit examples guide](docs/ai-visibility-audit-examples.md): copyable prompts for Codex, Claude, `llms.txt`, crawler readiness, and Chinese domestic-market reports.
 
 ## First-Version Scope
 

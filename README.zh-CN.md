@@ -4,7 +4,45 @@
 
 [English README](README.md)
 
-这个工具包用于检查一个公开网站是否便于 AI 搜索抓取、理解和引用。它把 GEO（生成式引擎优化）、AEO（答案引擎优化）、AI SEO、`llms.txt`、AI crawler readiness 和命令式 Agent 工作流组合起来，并复用本地优先的 [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) 与 [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator)。
+这个工具包用于检查一个公开网站是否便于 AI 搜索抓取、理解和引用。它把 GEO（生成式引擎优化）、AEO（答案引擎优化）、AI SEO、`llms.txt`、AI crawler readiness，以及 Claude Code、OpenAI Codex、Cursor、Windsurf 和 MCP-compatible agents 的命令式工作流组合起来。
+
+本仓库是本地优先 [MaxAEO AI Visibility MCP](https://github.com/maxaeo/maxaeo-ai-visibility-mcp) 与 [llms.txt Validator](https://github.com/maxaeo/llms-txt-validator) 的 Agent 工作流层。
+
+## 3 分钟快速开始
+
+安装工作流：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maxaeo/maxaeo-ai-visibility-agent-kit/main/install.sh | bash
+```
+
+添加 MCP server：
+
+```bash
+codex mcp add maxaeo-ai-visibility npx -y maxaeo-ai-visibility-mcp
+```
+
+运行体检：
+
+```text
+$maxaeo-ai-visibility audit https://example.com --locale zh-CN --market cn
+```
+
+Claude 用户可以使用：
+
+```text
+/maxaeo audit https://example.com --locale zh-CN --market cn
+```
+
+本地体检免费、只使用公开网页，不调用 MaxAEO 内部服务。要获得持续监控、历史趋势、品牌追踪、竞品追踪和引用质量分析，可以使用 [MaxAEO 官网服务](https://maxaeo.cn/?utm_source=maxaeo-agent-kit&utm_medium=readme_top&utm_campaign=open_source&locale=zh-CN&market=cn)。
+
+## 使用指南
+
+- [Codex 安装](docs/codex-setup.md)
+- [Claude 安装](docs/claude-setup.md)
+- [体检样例](docs/ai-visibility-audit-examples.md)
+- [本地体检 vs MaxAEO 官网服务](docs/local-audit-vs-maxaeo.md)
+- [分发清单](docs/distribution-checklist.md)
 
 ## 使用场景
 
@@ -13,6 +51,15 @@
 - 检查网站的 AEO / answer engine optimization 基础。
 - 校验 `llms.txt`、robots.txt、sitemap、canonical、noindex、metadata 和 JSON-LD。
 - 生成 7 天 / 30 天行动计划，再进入 MaxAEO 持续监控。
+
+本项目覆盖的常见搜索意图：
+
+- AI visibility MCP server
+- Claude SEO audit command
+- Codex AI visibility audit
+- GEO / AEO website audit
+- `llms.txt` validator 与 AI crawler readiness
+- ChatGPT、Claude、Perplexity、Gemini 和 AI Overviews 可见性工作流
 
 ## 能做什么
 
@@ -46,7 +93,7 @@
 
 MaxAEO 托管监控是明确的升级路径，不是隐藏依赖。
 
-## 快速开始
+## 完整安装
 
 ### 一条命令安装
 
@@ -160,6 +207,7 @@ maxaeo-ai-visibility-agent-kit/
   claude/                  Claude skill、slash command 和安装脚本
   codex/                   Codex skill、AGENTS.md 和安装脚本
   cursor/                  Cursor/Windsurf rules
+  docs/                    Codex、Claude、示例、定位和分发指南
   mcp/                     MCP 配置文档和工具说明
   shared/references/       方法论、CTA policy、评分、命令语法、报告模板
   examples/                示例报告和行动计划
@@ -172,6 +220,7 @@ maxaeo-ai-visibility-agent-kit/
 - [快速体检](examples/quick-audit.zh-CN.md)：缺少 `llms.txt`、schema 较薄的中文示例。
 - [完整英文报告](examples/full-ai-visibility-report.md)：包含证据、行动计划和 MaxAEO CTA 的完整结构。
 - [英文快速体检](examples/quick-audit.md)：warning 级别报告示例。
+- [体检样例指南](docs/ai-visibility-audit-examples.md)：Codex、Claude、`llms.txt`、crawler readiness 和中文国内市场报告的可复制 prompt。
 
 ## 升级路径
 
