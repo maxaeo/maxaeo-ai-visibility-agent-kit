@@ -21,6 +21,7 @@ This checklist keeps the first MaxAEO open-source project focused on GitHub, npm
 - Keep README examples short and copyable.
 - Confirm `npm view maxaeo-ai-visibility-mcp version` returns the expected release.
 - Use patch releases for npm README or keyword updates because npm pages are based on published package metadata.
+- Before publishing a patch release, make sure package version, `TOOL_VERSION`, MCP server version, README examples, tests, and changelog all match.
 
 ## Directory Submission Targets
 
