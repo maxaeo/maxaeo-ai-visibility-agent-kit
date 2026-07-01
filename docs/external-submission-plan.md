@@ -35,6 +35,7 @@ This plan keeps MaxAEO's first open-source distribution focused on GitHub, npm, 
 
 | Date | Target | Status | Link | Notes |
 |---|---|---|---|---|
+| 2026-07-01 | Official MCP Registry | published | https://registry.modelcontextprotocol.io/v0/servers?search=io.github.maxaeo/maxaeo-ai-visibility-mcp | `server.json` and npm `mcpName=io.github.maxaeo/maxaeo-ai-visibility-mcp` are live at `0.3.2`. After making the `mimimile` membership in the `maxaeo` GitHub org public and refreshing `mcp-publisher` login, `mcp-publisher publish server.json` succeeded. Registry API verifies `count=1`, `status=active`, and `isLatest=true`; published at `2026-07-01T09:59:00.69659Z`. |
 | 2026-06-29 | `maxaeo/maxaeo-ai-visibility-mcp` | published | https://www.npmjs.com/package/maxaeo-ai-visibility-mcp/v/0.3.1 | `0.3.1` release 已发布到 npm。package/tool/server/README/test/changelog 版本已同步，测试和 GitHub Actions 已通过。`npm view` 确认 registry version 为 `0.3.1`，新增 npm keywords 已同步。 |
 | 2026-06-29 | External submitted PRs/issues | followed up | https://github.com/punkpeye/awesome-mcp-servers/pull/8614#issuecomment-4829638052 | Added low-advertising follow-up comments on open MCP/GEO/AI SEO/Claude Code/llms.txt submissions, emphasizing npm install, local-first behavior, and no telemetry. |
 | 2026-06-24 | `maxaeo/maxaeo-ai-visibility-mcp` | completed | https://github.com/maxaeo/maxaeo-ai-visibility-mcp/commit/9ca3758c65ebc0368fc985a57e776fb1292c605a | Added contribution guidance, issue templates, directory-listing copy, and expanded npm discovery keywords. GitHub Actions passed. |
